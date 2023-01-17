@@ -1,16 +1,14 @@
-# This is a sample Python script.
+import numpy as np
+import matplotlib.pyplot as plt
+import math as mt
+import managers.functions as fn
+import managers.integrate_by_runge_kutt as rk
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+x = np.linspace(2, 6, 1)
+y = np.linspace(-2, -6, 1)
+t = np.linspace(0, 10, 1)
+#vy = fn.yfunction(x,t)
+vx = fn.xfunction(x,t)
+plt.plot(vx)
+#X=rk.runge_kutt_4(t, x0, n, vx)
+#Y=rk.runge_kutt_4(t, x0, n, vy)
