@@ -1,9 +1,9 @@
 import numpy as np
 
 
-def xfunction(x, t):
+def xfunction(t, x: float):
     return np.exp(-t) * x
 
 
-def yfunction(y, t):
+def yfunction(t, y: float):
     return (t - 1) * y

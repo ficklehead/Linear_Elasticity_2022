@@ -1,10 +1,8 @@
-from material_point import MaterialPoint
-from typing import List
 
 
 class PointTrajectory:
-    def __init__(self, id, x_coords: List[float], y_coords: List[float], material_points: List[MaterialPoint]):
+    def __init__(self, id, x, y, material_points):
         self.id = id
-        self.x_coords = x_coords
-        self.y_coords = y_coords
+        self.x = x
+        self.y = y
         self.material_points = material_points
